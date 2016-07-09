@@ -6,6 +6,7 @@ class Config(object):
 	TESTING = False 
 	CSRF_ENABLED = True
 	SECRET_KEY = 'claryssa'
+	SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
 
 class UltimateConfig(Config):
 	DEBUG= False 
